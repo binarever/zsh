@@ -1,0 +1,13 @@
+sudo apt-get install zsh
+wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -0 - | sh
+alias ..='cd ..'
+alias sinstall='sudo apt-get install'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias untgz='tar -zxvf'
+alias unbz2='tar -xjvf'
+alias undeb='dpkg -i'
+git clone git://github.com/joelthelion/autojump.git
+cd .autojump
+python install.py
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
